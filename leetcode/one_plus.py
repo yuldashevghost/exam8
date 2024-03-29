@@ -9,5 +9,7 @@ class Solution:
         return [1] + digits
 
 
-digit = list(map(int, input().split()))
-print(plusOne(digit))
+if __name__ == '__main__':
+    obj = Solution()
+    digits = list(map(int, input().split()))
+    print(obj.plusOne(digits))
