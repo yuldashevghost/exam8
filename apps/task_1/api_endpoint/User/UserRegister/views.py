@@ -10,16 +10,18 @@ class UserRegisterView(APIView):
     def post(self, request):
         serializer = UserRegisterSerializer(data=request.data)
         if serializer.is_valid():
-            username = serializer.validated_data.get('username')
-            password = serializer.validated_data.get('password')
-            email = serializer.validated_data.get('email')
+            username = serializer.validated_data.get("username")
+            password = serializer.validated_data.get("password")
+            email = serializer.validated_data.get("email")
             old_user = User.objects.filter(email=email).first()
             if old_user:
                 if old_user.deleted:
                     old_user.deleted = False
                     old_user.save()
                 else:
-                    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+                    return Response(
+                        serializer.errors, status=status.HTTP_400_BAD_REQUEST
+                    )
             user = User.objects.create(username=username, email=email)
             user.set_password(password)
             user.save()
@@ -27,4 +29,5 @@ class UserRegisterView(APIView):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-__all__ = ['UserRegisterView']
+
+__all__ = ["UserRegisterView"]

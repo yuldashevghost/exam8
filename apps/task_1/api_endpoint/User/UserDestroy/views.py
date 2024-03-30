@@ -8,5 +8,5 @@ class UserDestroyAPIView(DestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserDestroySerializer
 
-__all__ = ['UserDestroyAPIView']
 
+__all__ = ["UserDestroyAPIView"]

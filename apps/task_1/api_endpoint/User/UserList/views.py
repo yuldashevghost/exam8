@@ -8,4 +8,5 @@ class UserListView(generics.ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserListSerializer
 
-__all__ = ['UserListView']
+
+__all__ = ["UserListView"]

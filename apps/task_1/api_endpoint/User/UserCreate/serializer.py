@@ -6,7 +6,4 @@ from apps.task_1.models import User
 class UserCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'password')
-
-
-
+        fields = ("id", "username", "email", "password")

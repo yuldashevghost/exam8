@@ -21,7 +21,7 @@ from .swagger import urlpatterns as swagger_patterns
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/v1/task_1", include("apps.task_1.urls"))
+    path("api/v1/task_1", include("apps.task_1.urls")),
 ]
 
 urlpatterns += swagger_patterns

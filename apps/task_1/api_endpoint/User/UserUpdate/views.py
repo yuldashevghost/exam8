@@ -8,4 +8,5 @@ class UserUpdateView(UpdateAPIView):
     queryset = User.objects.all()
     serializer_class = UserUpdateSerializer
 
-__all__ = ['UserUpdateView']
+
+__all__ = ["UserUpdateView"]

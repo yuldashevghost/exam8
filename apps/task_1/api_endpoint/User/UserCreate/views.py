@@ -8,4 +8,5 @@ class UserCreateAPIView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserCreateSerializer
 
-__all__ = ['UserCreateAPIView']
+
+__all__ = ["UserCreateAPIView"]
