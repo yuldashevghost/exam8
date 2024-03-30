@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.task_1",
+    "apps.user",
     "rest_framework",
     "rest_framework_simplejwt",
     "drf_yasg",
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-AUTH_USER_MODEL = "task_1.User"
+AUTH_USER_MODEL = "user.User"
 
 ROOT_URLCONF = "Exam8.urls"
 

@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from apps.task_1.api_endpoint.User.UserRegister.serializer import UserRegisterSerializer
-from apps.task_1.models import User
+from apps.user.api_endpoint.User.UserRegister.serializer import UserRegisterSerializer
+from apps.user.models import User
 
 
 class UserRegisterView(APIView):

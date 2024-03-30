@@ -1,7 +1,7 @@
 from rest_framework.generics import DestroyAPIView
 
-from apps.task_1.api_endpoint.User.UserDestroy.Serializer import UserDestroySerializer
-from apps.task_1.models import User
+from apps.user.api_endpoint.User.UserDestroy.Serializer import UserDestroySerializer
+from apps.user.models import User
 
 
 class UserDestroyAPIView(DestroyAPIView):

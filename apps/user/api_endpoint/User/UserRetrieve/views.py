@@ -1,7 +1,7 @@
 from rest_framework.generics import RetrieveAPIView
 
-from apps.task_1.api_endpoint.User.UserRetrieve.serializer import UserRetrieveSerializer
-from apps.task_1.models import User
+from apps.user.api_endpoint.User.UserRetrieve.serializer import UserRetrieveSerializer
+from apps.user.models import User
 
 
 class UserRetrieveAPIView(RetrieveAPIView):

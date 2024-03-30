@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from apps.task_1.api_endpoint.User.UserCreate.serializer import UserCreateSerializer
-from apps.task_1.models import User
+from apps.user.api_endpoint.User.UserCreate.serializer import UserCreateSerializer
+from apps.user.models import User
 
 
 class UserCreateAPIView(generics.CreateAPIView):
