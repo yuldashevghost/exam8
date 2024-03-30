@@ -4,13 +4,14 @@ class Solution:
         len_s = 0
 
         for i in range(len(s) - 1, -1, -1):
-            if s[i] == ' ':
+            if s[i] == " ":
                 break
             len_s += 1
 
         return len_s
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     obj = Solution()
     s = input()
     print(obj.lengthOfLastWord(s))
