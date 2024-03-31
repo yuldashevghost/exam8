@@ -24,6 +24,7 @@ urlpatterns = [
     path("api/v1/task_1/", include("apps.user.urls")),
     path("api/v1/task_2/", include("apps.vacancy.urls")),
     path("api/v1/task_3/", include("apps.product.urls")),
+    path("api/v1/task_4/", include("apps.sport.urls")),
 ]
 
 urlpatterns += swagger_patterns
