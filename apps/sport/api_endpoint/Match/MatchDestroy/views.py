@@ -8,4 +8,5 @@ class MatchDestroyAPIVIew(DestroyAPIView):
     queryset = Match.objects.all()
     serializer_class = MatchDestroySerializer
 
-__all__ = ['MatchDestroyAPIVIew']
+
+__all__ = ["MatchDestroyAPIVIew"]

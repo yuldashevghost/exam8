@@ -6,5 +6,4 @@ from apps.sport.models import Team
 class TeamRetrieveSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
-        fields = '__all__'
-
+        fields = "__all__"

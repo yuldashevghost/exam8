@@ -8,4 +8,5 @@ class SportUpdateAPIView(UpdateAPIView):
     queryset = Sport.objects.all()
     serializer_class = SportUpdateSerializer
 
-__all__ = ['SportUpdateAPIView']
+
+__all__ = ["SportUpdateAPIView"]

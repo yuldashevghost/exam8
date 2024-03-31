@@ -6,4 +6,4 @@ from apps.sport.models import Rating
 class RatingUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating
-        fields = '__all__'
+        fields = "__all__"

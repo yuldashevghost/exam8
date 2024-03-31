@@ -8,4 +8,5 @@ class RatingListAPIView(ListAPIView):
     queryset = Rating.objects.all()
     serializer_class = RatingListSerializer
 
-__all__ = ['RatingListAPIView']
+
+__all__ = ["RatingListAPIView"]

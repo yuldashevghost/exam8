@@ -8,4 +8,5 @@ class TeamCreateAPIView(CreateAPIView):
     queryset = Team.objects.all()
     serializer_class = TeamCreateSerializer
 
-__all__ = ['TeamCreateAPIView']
+
+__all__ = ["TeamCreateAPIView"]

@@ -6,4 +6,4 @@ from apps.sport.models import Chempionship
 class ChempionshipDestroySerializer(serializers.ModelSerializer):
     class Meta:
         model = Chempionship
-        fields = '__all__'
+        fields = "__all__"

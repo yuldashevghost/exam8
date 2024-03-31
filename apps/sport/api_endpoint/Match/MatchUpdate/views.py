@@ -9,4 +9,5 @@ class MatchUpdateAPIView(UpdateAPIView):
     queryset = Match.objects.all()
     serializer_class = MatchUpdateSerializer
 
-__all__ = ['MatchUpdateAPIView']
+
+__all__ = ["MatchUpdateAPIView"]

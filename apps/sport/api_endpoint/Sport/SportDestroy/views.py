@@ -8,4 +8,5 @@ class SportDestroyAPIView(DestroyAPIView):
     queryset = Sport.objects.all()
     serializer_class = SportDestroySerializer
 
-__all__ = ['SportDestroyAPIView']
+
+__all__ = ["SportDestroyAPIView"]

@@ -8,9 +8,11 @@ from apps.sport.models import Sport, Chempionship, Team, Match, Rating
 class SportAdmin(admin.ModelAdmin):
     pass
 
+
 @admin.register(Chempionship)
 class ChempionshipAdmin(admin.ModelAdmin):
     pass
+
 
 @admin.register(Team)
 class TeamAdmin(admin.ModelAdmin):
@@ -20,6 +22,7 @@ class TeamAdmin(admin.ModelAdmin):
 @admin.register(Match)
 class MatchAdmin(admin.ModelAdmin):
     pass
+
 
 @admin.register(Rating)
 class RatingAdmin(admin.ModelAdmin):

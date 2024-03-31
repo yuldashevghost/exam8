@@ -8,4 +8,5 @@ class TeamDestroyAPIView(DestroyAPIView):
     queryset = Team.objects.all()
     serializer_class = TeamDestroySerializer
 
-__all__ = ['TeamDestroyAPIView']
+
+__all__ = ["TeamDestroyAPIView"]

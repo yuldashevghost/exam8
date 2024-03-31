@@ -8,4 +8,5 @@ class MatchListAPIView(ListAPIView):
     queryset = Match.objects.all()
     serializer_class = MatchListSerializer
 
-__all__ = ['MatchListAPIView']
+
+__all__ = ["MatchListAPIView"]

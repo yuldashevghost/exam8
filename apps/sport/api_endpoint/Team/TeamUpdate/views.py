@@ -8,4 +8,5 @@ class TeamUpdateAPIView(UpdateAPIView):
     queryset = Team.objects.all()
     serializer_class = TeamUpdateSerializer
 
-__all__ = ['TeamUpdateAPIView']
+
+__all__ = ["TeamUpdateAPIView"]
